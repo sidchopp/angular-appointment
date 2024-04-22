@@ -16,7 +16,7 @@ export class AppointmentListComponent implements OnInit {
     // checking if local storage has this key - my appointments
     let savedAppointments = localStorage.getItem('my appointments');
 
-    // if key is there, than convert JSON string into a JavaScript object or gives an empty array
+    // if key is there, than convert JSON string into a JavaScript object or gives an empty array on init
     this.appointments = savedAppointments ? JSON.parse(savedAppointments) : [];
   }
 
